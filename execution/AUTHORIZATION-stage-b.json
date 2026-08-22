@@ -1,0 +1,11 @@
+{
+  "approved": true,
+  "authorization_basis": "User instructed Codex to proceed with the recommended experiment, commit, push, and use GPU as it goes until completion or a blocker.",
+  "authorized_source_commit": "dfeb411d711fb65913828ef065561e944926df63",
+  "maximum_model_calls": 3,
+  "retries": 0,
+  "schema_version": "measured-inference-authorization-v0",
+  "source_lock_sha256": "9c8b0382b55728ab5b23da10f85061806d4a4208c1628ae18660d7b023821c30",
+  "stage": "stage-b",
+  "study_id": "qwen38-bounded-progress-state-utility-v0"
+}

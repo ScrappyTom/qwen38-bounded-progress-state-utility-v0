@@ -1,0 +1,10 @@
+{
+  "authorization_basis": "User instructed Codex to proceed with the recommended experiment, commit, push, and use GPU as it goes until completion or a blocker.",
+  "conditions": "One seed-42 treated continuation; maximum three calls; one attempt; zero retries; exact frozen package; stop at historical reread, submission, result-delivery overflow, call limit, or integrity failure.",
+  "maximum_model_calls": 3,
+  "requested_stage": "stage-b",
+  "schema_version": "bounded-progress-state-authorization-request-v0",
+  "source_lock_sha256": "9c8b0382b55728ab5b23da10f85061806d4a4208c1628ae18660d7b023821c30",
+  "study_id": "qwen38-bounded-progress-state-utility-v0",
+  "treated_request_sha256": "43ce299a8e93dc3b57e0ae639b83d790ff8b5a2c8ee7a1cc1f77428c1781c0aa"
+}
