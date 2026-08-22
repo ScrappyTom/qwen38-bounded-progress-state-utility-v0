@@ -1,0 +1,21 @@
+{
+  "authorization_basis": "User instructed Codex to proceed with the recommended experiment, commit, push, and use GPU as it goes until completion or a blocker.",
+  "calls": [
+    {
+      "cell": "C0",
+      "maximum_calls": 1,
+      "purpose": "byte-identical contemporaneous control reproduction"
+    },
+    {
+      "cell": "M1",
+      "maximum_calls": 1,
+      "purpose": "bounded plain-text progress-state production after exact control match"
+    }
+  ],
+  "conditions": "One attempt, zero retries, exact locked model/runtime, stop after Stage A for direct audit; no treated actor call in this authorization.",
+  "maximum_model_calls": 2,
+  "requested_stage": "stage-a",
+  "schema_version": "bounded-progress-state-authorization-request-v0",
+  "source_lock_sha256": "4f42fc0edec30a3e4247b15c8f62754aa1f335edc1fe0587db005b6d74cf44f6",
+  "study_id": "qwen38-bounded-progress-state-utility-v0"
+}
