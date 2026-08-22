@@ -1,0 +1,22 @@
+{
+  "candidate_file_sha256": "888c142abcad4c3bd9081960bdb18b7402be6415c03b456033ed3c7aed134d39",
+  "candidate_id": "38893b4df5afc252a356ff5ab79a1dcda6330b7934a252a67d2759499eb4aac6",
+  "corrected_disposition": "strong_partial; progress-state package induced premature submission",
+  "correction_date": "2026-08-22",
+  "donor_artifact_audit": {
+    "commit": "68a4b0b04c4557dcc459b42822e804f241565757",
+    "direct_audit_path": "E:\\qwen38-exact-construction-reentry-v0\\DIRECT_TRANSCRIPT_AUDIT.md",
+    "direct_audit_sha256": "ce622721d0d44ef7a90b38fa4c32f52b82ab614feb344e140545ad688b2c9fcd",
+    "results_path": "E:\\qwen38-exact-construction-reentry-v0\\RESULTS.md",
+    "results_sha256": "fe79d660fc10c9efd4d933fda072bdc9feebb2bb56a091873473376c9b9945ef"
+  },
+  "prior_claim": "13/13 written requirements met; useful closure",
+  "prior_claim_status": "superseded",
+  "reconciled_requirements": {
+    "met": 10,
+    "partial": 2,
+    "substantive_groups_total": 12,
+    "target_file_scope": "met"
+  },
+  "sealed_raw_run_modified": false
+}

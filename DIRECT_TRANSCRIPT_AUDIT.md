@@ -62,17 +62,26 @@ The historical focus was not reread. No other acquisition occurred. No explicit
 check action existed in the inherited schema, so zero checks is an apparatus
 qualification rather than model refusal.
 
-## Artifact audit
+## Artifact audit — superseded disposition
 
 The submitted navigation-study section was compared directly with the written
-task and all four exact source documents. Factual counts and boundaries—32
-calls, zero predecessor source reads, seven successor documents across six
-directories, 11 seed-42 reopens, seed-314159 synthesis by turn 18, and the
-320-token pre-call-23 deficit—match the source records.
+task and all four exact source documents. The headline counts—32 calls, zero
+predecessor source reads, seven successor documents across six directories, 11
+seed-42 reopens, seed-314159 synthesis by turn 18, and the 320-token pre-call-23
+deficit—match the source records. The narrative timing of the 11 reopens does
+not: it implies all followed the explicit call-budget observation, whereas five
+occurred before and six after.
 
-All 13 written contract criteria passed direct review. The four repository-
-relative evidence links are exact. No separate semantic evaluator was available
-or implied.
+The original H05 audit marked all 13 criteria as passed. Candidate-hash
+reconciliation later established that the exact same bytes had already received
+a frozen strong-partial adjudication: 10 substantive groups met, with apparatus-
+correction coverage and one factual-timing claim partial. The four repository-
+relative evidence links remain exact. No separate semantic evaluator was
+available or implied.
+
+The original 13/13 judgment was an investigator reconciliation failure. It did
+not result from a changed candidate or faulty replay. The authoritative
+correction is `POSTHOC_ARTIFACT_DISPOSITION_CORRECTION.md`.
 
 ## Causal and inferential limits
 
@@ -81,5 +90,6 @@ the semantic state from its provenance, authority notice, user role, recency,
 or serialization. Nor can one selected trajectory distinguish durable control
 state from a recent self-authored submit cue.
 
-The result establishes useful local closure, not construction improvement or a
-general progress mechanism.
+The result establishes behavioral salience and premature local closure at a
+known strong-partial boundary, not construction improvement or a general
+progress mechanism.

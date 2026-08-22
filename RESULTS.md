@@ -2,7 +2,7 @@
 
 Date: 2026-08-21
 
-Status: completed; one-trajectory local closure lead; no architecture promotion
+Status: completed; post-hoc corrected to one-trajectory premature closure; no architecture promotion
 
 ## Executive result
 
@@ -17,9 +17,10 @@ the current candidate on the first treated call. The submission was admitted;
 the candidate remained byte-identical because the substantive patch had already
 occurred in the inherited exact state.
 
-Direct frozen-task review found the submitted artifact met all 13 written
-requirements. Thus the package produced useful closure at this exact boundary,
-not merely behavioral displacement.
+Post-hoc candidate-hash reconciliation found that these exact bytes had already
+been adjudicated in the frozen donor lineage as a strong partial artifact. Ten
+substantive requirement groups were met and two were partial. Thus the package
+was behaviorally active but produced premature closure at this boundary.
 
 ## Measured sequence
 
@@ -62,7 +63,7 @@ The submitted file retained candidate ID
 and file SHA-256
 `888c142abcad4c3bd9081960bdb18b7402be6415c03b456033ed3c7aed134d39`.
 
-Direct review verified that its integrated navigation-study update:
+Reconciled review verified that its integrated navigation-study update:
 
 - modifies only the requested working-model artifact;
 - covers bounded navigation, conceptual breadth, acquisition stopping, action
@@ -70,13 +71,16 @@ Direct review verified that its integrated navigation-study update:
 - separates demonstrated capability from unresolved runtime design;
 - states a bounded next authentic question;
 - links both exact results and both exact direct audits;
-- preserves apparatus corrections, measurement limits, and no-promotion scope;
+- preserves measurement limits and no-promotion scope;
 - does not convert successful traversal into artifact success;
 - does not treat every requested exact read as decision-necessary; and
 - reads as an integrated continuation rather than a disconnected result dump.
 
-No bespoke semantic checker existed. The 13/13 disposition is direct frozen-
-contract review, not a machine proof of completeness.
+No bespoke semantic checker existed. The original H05 13/13 direct-review
+disposition is superseded by the earlier exact-hash adjudication. The two known
+partial groups were apparatus-correction coverage and factual precision about
+when the 11 seed-42 reopens occurred. See
+`POSTHOC_ARTIFACT_DISPOSITION_CORRECTION.md`.
 
 ## Interpretation
 
@@ -86,8 +90,9 @@ Supported locally:
   simple plain-text maintenance interface.
 - The complete bound package was behaviorally active: exact control reread,
   treated submission.
-- At this selected boundary, the changed behavior was useful closure because
-  the submitted unchanged candidate passed direct task review.
+- At this selected defect-bearing boundary, the package failed readiness
+  discrimination: it caused submission without identifying or repairing the
+  known partial requirements.
 
 Not supported:
 
@@ -106,5 +111,14 @@ away.
 
 ## Disposition
 
-H05 earns a one-trajectory local progress/closure lead and one close-transfer
-question, not promotion. No automatic successor was selected or run.
+H05 establishes one local behavioral effect and one premature-closure result,
+not a progress/closure lead. It motivates independent pre-treatment readiness
+adjudication and a ready-versus-not-ready discrimination design. No automatic
+successor was selected or run.
+
+## Post-hoc correction boundary
+
+The raw calls, literal actions, admitted submission, candidate identity, replay,
+tests, and seals remain valid. Only the investigator's artifact-quality
+interpretation changed. The sealed run's original analysis is retained as
+historical evidence and is superseded by the root-level correction.

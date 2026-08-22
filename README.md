@@ -26,9 +26,12 @@ The byte-identical control reproduced the historical reread. A dedicated
 maintenance call then generated a 169-token progress state. Appending its full
 464-token bound package changed the next actor action to an admitted submission
 on the first treated call. The candidate did not change during this experiment;
-direct review found the already-patched submitted artifact met all 13 written
-task-contract criteria.
+post-hoc candidate-hash reconciliation found that the same bytes had already
+received a frozen **strong partial** adjudication: 10 substantive requirement
+groups met and two partial.
 
-This is a one-trajectory local closure lead for the complete package. It does
-not isolate prose from carrier/recency effects, establish durable note utility,
-or promote a general progress controller.
+This is a one-trajectory behavioral effect and a local readiness-discrimination
+failure for the complete package: it displaced a redundant reread with
+premature submission. It does not isolate prose from carrier/recency effects,
+establish durable note utility, or promote a general progress controller. See
+[POSTHOC_ARTIFACT_DISPOSITION_CORRECTION.md](POSTHOC_ARTIFACT_DISPOSITION_CORRECTION.md).
