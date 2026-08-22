@@ -1,0 +1,11 @@
+{
+  "schema_version": "bounded-progress-state-forecast-v0",
+  "frozen_before_stage_a": true,
+  "outcomes": [
+    {"probability": 0.35, "outcome": "qualified package still produces the exact historical reread"},
+    {"probability": 0.25, "outcome": "package displaces demand to another acquisition without artifact progress"},
+    {"probability": 0.25, "outcome": "package produces an admitted mutation before a repeat read"},
+    {"probability": 0.10, "outcome": "maintenance output fails bounded expression, safety, or package capacity"},
+    {"probability": 0.05, "outcome": "control reproduction or apparatus integrity fails"}
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": "bounded-progress-state-model-profile-v0",
+  "model_alias": "qwen38-ad25q8-world-join",
+  "model_quant": "AD-IQ2_S",
+  "model_sha256": "d416fa422c9035605c778f60d90a94b288c38b4f9ec2126b58ef938ce8d5f716",
+  "model_size_bytes": 11141912032,
+  "llama_cpp_build": "b10434-7e4c0a968",
+  "llama_server_sha256": "5f1f831bc21dcbff4ca40e05cb59dbcbc0802d20b2046540bbbf3bd45cd61610",
+  "context_tokens": 25088,
+  "kv": "q8_0",
+  "gpu_layers": "66/66",
+  "reasoning": "off",
+  "seed": 42,
+  "temperature": 0.7,
+  "top_p": 0.8,
+  "top_k": 20,
+  "min_p": 0.0,
+  "presence_penalty": 1.5,
+  "repeat_penalty": 1.0,
+  "actor_completion_maximum": 4096,
+  "maintenance_completion_maximum": 384
+}

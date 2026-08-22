@@ -1,0 +1,39 @@
+{
+  "schema_version": "h05-progress-state-eligibility-v0",
+  "date": "2026-08-21",
+  "eligible_cases": 1,
+  "selected": {
+    "donor_repository": "ScrappyTom/qwen38-accumulated-exact-focus-v0",
+    "donor_commit": "6bed7b208174646b803405fdce1a83a9432fba88",
+    "run_id": "2026-08-21-sealed-accumulated-exact-focus-v0",
+    "cell": "02-effect-patch-s42",
+    "seed": 42,
+    "request_path": "runs/2026-08-21-sealed-accumulated-exact-focus-v0/cells/02-effect-patch-s42/requests/call-01.json",
+    "request_messages": 8,
+    "prompt_tokens": 20099,
+    "response_reserve_tokens": 4096,
+    "headroom_after_reserve": 893,
+    "maximum_progress_package_increment_tokens": 700,
+    "minimum_treated_headroom_tokens": 193,
+    "candidate_id": "38893b4df5afc252a356ff5ab79a1dcda6330b7934a252a67d2759499eb4aac6",
+    "candidate_file_sha256": "888c142abcad4c3bd9081960bdb18b7402be6415c03b456033ed3c7aed134d39",
+    "historical_action": {
+      "action": "read_lines",
+      "path": "QWEN_RELATION_ACTION_WORKING_MODEL.md",
+      "start_line": 860,
+      "end_line": 937
+    },
+    "historical_action_class": "second_focus_rerequest",
+    "pending_update": false,
+    "eligibility": "conditional_on_exact_package_preflight"
+  },
+  "excluded": [
+    {"case": "exact-construction-reentry-s42", "reason": "control_mutates_on_next_call"},
+    {"case": "exact-construction-reentry-s314159", "reason": "nonresident_result_delivery_failure"},
+    {"case": "recurrent-exact-state-observation", "reason": "unstable_co_residency_and_insufficient_headroom"},
+    {"case": "workspace-directory-observation", "reason": "insufficient_headroom"},
+    {"case": "exact-focus-observation", "reason": "insufficient_headroom"},
+    {"case": "accumulated-focus-observation", "reason": "nonresident_demand_and_insufficient_headroom"},
+    {"case": "passive-model-managed-residency", "reason": "control_plane_unreachable"}
+  ]
+}

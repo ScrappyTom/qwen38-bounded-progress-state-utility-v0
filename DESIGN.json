@@ -1,0 +1,31 @@
+{
+  "schema_version": "bounded-progress-state-design-v0",
+  "study_id": "qwen38-bounded-progress-state-utility-v0",
+  "seed": 42,
+  "boundary": "accumulated-focus effect case exact second-focus reread",
+  "stages": [
+    {
+      "id": "C0",
+      "purpose": "contemporaneous byte-identical control reproduction",
+      "maximum_calls": 1,
+      "gate": "exact historical action match"
+    },
+    {
+      "id": "M1",
+      "purpose": "dedicated bounded progress-state production",
+      "maximum_calls": 1,
+      "gate": "normal complete plain text at 1-256 exact tokens plus direct audit"
+    },
+    {
+      "id": "T1",
+      "purpose": "short actor utility continuation",
+      "maximum_calls": 3,
+      "gate": "new freeze after exact state and package audit"
+    }
+  ],
+  "one_attempt": true,
+  "retries": 0,
+  "causal_unit": "complete bound progress-state package",
+  "semantic_state_authority": "lossy_non_authoritative",
+  "claim_scope": "one selected trajectory"
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": "bounded-progress-state-execution-schedule-v0",
+  "order": [
+    "C0 contemporaneous control",
+    "M1 maintenance only if C0 exact-match gate passes",
+    "stop server and directly audit",
+    "T1 in a later separately frozen execution only if all gates pass"
+  ],
+  "stage_a_maximum_calls": 2,
+  "stage_b_maximum_calls": 3,
+  "maximum_total_calls": 5,
+  "retries": 0,
+  "parallel_execution": false
+}
