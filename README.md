@@ -19,3 +19,16 @@ The experiment is staged:
 The package is lossy and non-authoritative. Exact task, evidence, candidate,
 and literal tool results remain authoritative. This is one descriptive
 trajectory, not a general progress controller or context architecture.
+
+## Result
+
+The byte-identical control reproduced the historical reread. A dedicated
+maintenance call then generated a 169-token progress state. Appending its full
+464-token bound package changed the next actor action to an admitted submission
+on the first treated call. The candidate did not change during this experiment;
+direct review found the already-patched submitted artifact met all 13 written
+task-contract criteria.
+
+This is a one-trajectory local closure lead for the complete package. It does
+not isolate prose from carrier/recency effects, establish durable note utility,
+or promote a general progress controller.

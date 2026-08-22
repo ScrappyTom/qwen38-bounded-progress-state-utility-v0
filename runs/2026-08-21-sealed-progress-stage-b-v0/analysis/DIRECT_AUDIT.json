@@ -1,0 +1,21 @@
+{
+  "artifact_contract": {
+    "criteria_met": 13,
+    "criteria_total": 13,
+    "evaluator": "direct frozen-task review",
+    "machine_semantic_checker_available": false
+  },
+  "candidate_changed": false,
+  "causal_unit": "complete bound progress-state package",
+  "control_action": "exact historical second-focus reread",
+  "limitations": [
+    "one selected trajectory",
+    "package components moved together",
+    "no mutation occurred in treatment",
+    "no explicit check action was available",
+    "durable/repeated progress-state utility untested"
+  ],
+  "schema_version": "bounded-progress-state-stage-b-direct-audit-v0",
+  "treated_action": "admitted submission",
+  "useful_local_closure": true
+}
