@@ -4,7 +4,7 @@ import subprocess
 from pathlib import Path
 from typing import Any
 
-from apparatus.canonical import load_json, sha256_file
+from apparatus.canonical import load_json, sha256_bytes, sha256_file
 from apparatus.constants import (
     BRANCH,
     DONOR_COMMIT,
@@ -47,11 +47,19 @@ def _rows(root: Path, repository: str, commit: str, mapping: dict[str, str]) -> 
     rows = []
     for copied, original in sorted(mapping.items()):
         copied_path = ROOT / copied
-        original_path = root / original
-        if not copied_path.is_file() or not original_path.is_file():
+        if not copied_path.is_file():
             raise RuntimeError(f"missing materialization: {copied} / {original}")
+        blob = subprocess.run(
+            ["git", "show", f"{commit}:{original}"],
+            cwd=root,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            check=False,
+        )
+        if blob.returncode:
+            raise RuntimeError(f"missing donor blob at pinned commit: {repository}@{commit}:{original}")
         copied_hash = sha256_file(copied_path)
-        original_hash = sha256_file(original_path)
+        original_hash = sha256_bytes(blob.stdout)
         rows.append({
             "donor_repository": repository,
             "donor_commit": commit,
@@ -60,17 +68,22 @@ def _rows(root: Path, repository: str, commit: str, mapping: dict[str, str]) -> 
             "donor_sha256": original_hash,
             "copied_sha256": copied_hash,
             "size_bytes": copied_path.stat().st_size,
-            "byte_equivalent": copied_hash == original_hash and copied_path.read_bytes() == original_path.read_bytes(),
+            "byte_equivalent": copied_hash == original_hash and copied_path.read_bytes() == blob.stdout,
         })
     return rows
 
 
 def donor_receipt() -> dict[str, Any]:
     for root, commit in ((DONOR_ROOT, DONOR_COMMIT), (PROGRAM_ROOT, PROGRAM_COMMIT)):
-        if git_output(root, "rev-parse", "HEAD") != commit:
-            raise RuntimeError(f"donor checkout is not pinned: {root}")
-        if git_output(root, "status", "--porcelain=v1", "--untracked-files=all"):
-            raise RuntimeError(f"donor checkout is not clean: {root}")
+        exists = subprocess.run(
+            ["git", "cat-file", "-e", f"{commit}^{{commit}}"],
+            cwd=root,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            check=False,
+        )
+        if exists.returncode:
+            raise RuntimeError(f"pinned donor commit is unavailable: {root} {commit}")
     rows = _rows(DONOR_ROOT, DONOR_REPOSITORY, DONOR_COMMIT, DONOR_IMPORTED_FILES)
     rows += _rows(PROGRAM_ROOT, PROGRAM_REPOSITORY, PROGRAM_COMMIT, PROGRAM_IMPORTED_FILES)
     return {
