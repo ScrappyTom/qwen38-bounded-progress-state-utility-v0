@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import argparse
 from pathlib import Path
 
 from apparatus.canonical import sha256_bytes, sha256_file, write_json
@@ -10,6 +11,7 @@ EXCLUDED_PARTS = {".git", ".cache", "execution", "runs", "__pycache__"}
 EXCLUDED_FILES = {
     "AUTHORIZATION_REQUEST.json",
     "provenance/SOURCE_LOCK.json",
+    "provenance/SOURCE_LOCK-stage-b.json",
 }
 
 
@@ -40,7 +42,12 @@ def build_source_lock() -> dict[str, object]:
 
 
 def main() -> int:
-    output = ROOT / "provenance" / "SOURCE_LOCK.json"
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--output", default="SOURCE_LOCK.json")
+    args = parser.parse_args()
+    if Path(args.output).name != args.output or not args.output.startswith("SOURCE_LOCK") or not args.output.endswith(".json"):
+        raise ValueError("output must be a SOURCE_LOCK*.json filename")
+    output = ROOT / "provenance" / args.output
     write_json(output, build_source_lock())
     print(output)
     return 0

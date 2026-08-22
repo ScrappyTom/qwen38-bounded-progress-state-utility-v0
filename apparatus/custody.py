@@ -86,8 +86,9 @@ def donor_receipt() -> dict[str, Any]:
     }
 
 
-def verify_source_lock() -> tuple[dict[str, Any], str]:
-    path = ROOT / "provenance" / "SOURCE_LOCK.json"
+def verify_source_lock(stage: str = "stage-a") -> tuple[dict[str, Any], str]:
+    name = "SOURCE_LOCK-stage-b.json" if stage == "stage-b" else "SOURCE_LOCK.json"
+    path = ROOT / "provenance" / name
     lock = load_json(path)
     for relative, expected in lock["locked_artifacts"].items():
         candidate = ROOT / relative
@@ -97,7 +98,7 @@ def verify_source_lock() -> tuple[dict[str, Any], str]:
 
 
 def require_authorization(stage: str, maximum_calls: int) -> dict[str, Any]:
-    _, lock_hash = verify_source_lock()
+    _, lock_hash = verify_source_lock(stage)
     path = ROOT / "execution" / f"AUTHORIZATION-{stage}.json"
     if not path.is_file():
         raise RuntimeError(f"authorization absent: {path.name}")

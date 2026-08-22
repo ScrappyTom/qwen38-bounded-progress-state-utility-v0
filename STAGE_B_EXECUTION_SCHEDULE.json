@@ -1,0 +1,9 @@
+{
+  "cell": "one seed-42 treated continuation",
+  "first_request_sha256": "43ce299a8e93dc3b57e0ae639b83d790ff8b5a2c8ee7a1cc1f77428c1781c0aa",
+  "maximum_model_calls": 3,
+  "parallel_execution": false,
+  "retries": 0,
+  "schema_version": "bounded-progress-state-stage-b-execution-schedule-v0",
+  "stage_a_seal_sha256": "ccf92f6ef91d2a7f2745568796ab56abd79ba80de58c3385510badd2cb923a4a"
+}

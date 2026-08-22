@@ -1,0 +1,16 @@
+{
+  "candidate_or_source_fabrication": false,
+  "complete_thoughts": true,
+  "contradiction": false,
+  "direct_safety_qualified": true,
+  "do_not_repeat_names_historical_reread": false,
+  "fields_complete": true,
+  "grounded_in_model_visible_packet": true,
+  "next_progress_event": "readiness disposition: submit if ready or identify a specific deficiency",
+  "next_progress_event_is_single_preselected_action": false,
+  "non_authoritative_status_preserved": true,
+  "schema_version": "bounded-progress-state-stage-a-direct-audit-v0",
+  "semantic_repair_performed": false,
+  "stage_b_semantically_eligible": true,
+  "unsupported_completion_or_sufficiency_claim": false
+}

@@ -67,6 +67,22 @@ class ApparatusTests(unittest.TestCase):
         self.assertEqual(treated["messages"][-1]["role"], "user")
         self.assertIn("bounded-progress-state-package-v0", treated["messages"][-1]["content"])
 
+    def test_frozen_stage_b_package_matches_renderer(self) -> None:
+        package = load_json(ROOT / "PROGRESS_STATE_PACKAGE.json")
+        receipt = load_json(ROOT / "STAGE_B_PACKAGE_PREFLIGHT.json")
+        maintenance = load_json(ROOT / "runs" / "2026-08-21-sealed-progress-stage-a-v0" / "analysis" / "MAINTENANCE_MECHANICAL_AUDIT.json")
+        frozen = load_json(ROOT / "STAGE_B_TREATED_REQUEST.json")
+        rendered = treated_request(
+            maintenance["content"],
+            load_json(ROOT / "BOUNDARY_AUDIT.json")["donor_request_sha256"],
+            maintenance["provider_response_sha256"],
+        )
+        self.assertEqual(frozen, rendered)
+        self.assertEqual(package["message"], frozen["messages"][-1])
+        self.assertTrue(receipt["verification_passed"])
+        self.assertEqual(receipt["treated_capacity"]["prompt_tokens"], 20563)
+        self.assertEqual(receipt["treated_capacity"]["headroom_after_reserve"], 429)
+
     def test_environment_replays_historical_action(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
             env = make_environment(CELL, Path(temp) / "world")

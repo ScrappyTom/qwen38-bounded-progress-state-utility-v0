@@ -1,0 +1,22 @@
+{
+  "basis": "Conditional on the generated state's direct audit and exact package qualification; frozen before treated actor inference.",
+  "outcomes": [
+    {
+      "outcome": "exact historical second-focus reread",
+      "probability": 0.45
+    },
+    {
+      "outcome": "another acquisition without artifact progress",
+      "probability": 0.30
+    },
+    {
+      "outcome": "admitted mutation or submission before a repeated read",
+      "probability": 0.20
+    },
+    {
+      "outcome": "invalid response, capacity endpoint, or apparatus issue dominates",
+      "probability": 0.05
+    }
+  ],
+  "schema_version": "bounded-progress-state-stage-b-forecast-v0"
+}
